@@ -1,6 +1,6 @@
 @use "sass:math";
-@use "@bu0nq/scss-function-rem" as *;
-@use "@bu0nq/scss-function-round" as *;
+@use "@m2collective/scss-function-rem" as *;
+@use "@m2collective/scss-function-round" as *;
 
 $min-breakpoint: 480px !default;
 $max-breakpoint: 1536px !default;

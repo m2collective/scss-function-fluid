@@ -1,14 +1,13 @@
 {
-  "name": "@bu0nq/scss-function-fluid",
-  "version": "2.0.0",
-  "description": "A package for integrating function to create responsive typography and design",
+  "name": "@m2collective/scss-function-fluid",
+  "version": "0.1.0",
+  "description": "A package for integrating function to create responsive typography and design.",
   "keywords": [
+    "m2collective",
     "scss",
-    "style",
-    "frontend",
     "function",
-    "functions",
-    "fluid"
+    "fluid",
+    "style"
   ],
   "main": "index.scss",
   "exports": {
@@ -17,26 +16,26 @@
       "default": "./index.scss"
     }
   },
-  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@bu0nq/scss-function-rem": "^2.0.0",
-    "@bu0nq/scss-function-round": "^2.0.0"
+    "@m2collective/scss-function-rem": "^0.1.0",
+    "@m2collective/scss-function-round": "^0.1.0"
   },
+  "license": "MIT",
   "author": {
     "name": "bu0nq",
     "email": "hello@bu0nq.ru"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bu0nq/scss-function-fluid.git"
+    "url": "git+https://github.com/m2collective/scss-function-fluid.git"
   },
   "bugs": {
-    "url": "https://github.com/bu0nq/scss-function-fluid/issues"
+    "url": "https://github.com/m2collective/scss-function-fluid/issues"
   },
-  "homepage": "https://github.com/bu0nq/scss-function-fluid#readme",
+  "homepage": "https://github.com/m2collective/scss-function-fluid#readme",
   "publishConfig": {
     "access": "public"
   }

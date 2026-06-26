@@ -28,7 +28,7 @@ To use the package, import it into your project:
 // Return
 
 .demo {
-    font-size: 1rem;
+    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
 }
 ```
 
@@ -46,7 +46,7 @@ You can change the namespace during function import and use the function with a 
 // Return
 
 .demo {
-    font-size: 1rem;
+    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
 }
 ```
 
@@ -70,7 +70,7 @@ You can redefine the default values for the specified variables when importing t
 // Return
 
 .demo {
-    font-size: 1rem;
+    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
 }
 ```
 

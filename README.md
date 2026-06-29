@@ -59,8 +59,8 @@ You can redefine the default values for the specified variables when importing t
     $min-breakpoint: 480px,
     $max-breakpoint: 1536px,
     $unit: vw,
-    $remDefault: 16,
-    $roundDecimals: 2,
+    $rem-default: 16,
+    $round-decimals: 2,
 );
 
 .demo {

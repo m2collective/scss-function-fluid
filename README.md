@@ -28,7 +28,7 @@ To use the package, import it into your project:
 // Return
 
 .demo {
-    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
+    font-size: clamp(1rem, .757576vw + .77rem, 1.5rem);
 }
 ```
 

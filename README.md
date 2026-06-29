@@ -28,7 +28,7 @@ To use the package, import it into your project:
 // Return
 
 .demo {
-    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
+    font-size: clamp(1rem, .757576vw + .77rem, 1.5rem);
 }
 ```
 
@@ -38,16 +38,6 @@ You can change the namespace during function import and use the function with a 
 
 ```scss
 @use "@m2collective/scss-function-fluid" as function;
-
-.demo {
-    font-size: function.fluid(16px, 24px);
-}
-
-// Return
-
-.demo {
-    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
-}
 ```
 
 ## Changing the variables
@@ -59,19 +49,9 @@ You can redefine the default values for the specified variables when importing t
     $min-breakpoint: 480px,
     $max-breakpoint: 1536px,
     $unit: vw,
-    $remDefault: 16,
-    $roundDecimals: 2,
+    $rem-default: 16,
+    $round-decimals: 2,
 );
-
-.demo {
-    font-size: fluid(16px, 24px);
-}
-
-// Return
-
-.demo {
-    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
-}
 ```
 
 ## License

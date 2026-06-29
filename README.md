@@ -38,16 +38,6 @@ You can change the namespace during function import and use the function with a 
 
 ```scss
 @use "@m2collective/scss-function-fluid" as function;
-
-.demo {
-    font-size: function.fluid(16px, 24px);
-}
-
-// Return
-
-.demo {
-    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
-}
 ```
 
 ## Changing the variables
@@ -62,16 +52,6 @@ You can redefine the default values for the specified variables when importing t
     $rem-default: 16,
     $round-decimals: 2,
 );
-
-.demo {
-    font-size: fluid(16px, 24px);
-}
-
-// Return
-
-.demo {
-    font-size: clamp(1rem,.757576vw + .77rem,1.5rem);
-}
 ```
 
 ## License

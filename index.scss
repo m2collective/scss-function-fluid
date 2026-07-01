@@ -1,1 +1,27 @@
-@forward "src/fluid";
+@use "sass:math";
+@use "@m2collective/scss-function-rem";
+@use "@m2collective/scss-function-round";
+
+$min-breakpoint: 480px !default;
+$max-breakpoint: 1536px !default;
+$unit: vw !default;
+
+$rem-default: 16 !default;
+$round-decimals: 2 !default;
+
+@function fluid(
+  $min-value,
+  $max-value,
+  $min-breakpoint: $min-breakpoint,
+  $max-breakpoint: $max-breakpoint,
+  $unit: $unit
+) {
+  $slope: math.div($max-value - $min-value, $max-breakpoint - $min-breakpoint);
+  $slope-to-unit: $slope * 100;
+
+  $intercept: scss-function-round.round(scss-function-rem.rem($min-value - $slope * $min-breakpoint, $rem-default), $round-decimals);
+  $min-value: scss-function-round.round(scss-function-rem.rem($min-value, $rem-default), $round-decimals);
+  $max-value: scss-function-round.round(scss-function-rem.rem($max-value, $rem-default), $round-decimals);
+
+  @return clamp(#{$min-value}, #{$slope-to-unit}#{$unit} + #{$intercept}, #{$max-value});
+}

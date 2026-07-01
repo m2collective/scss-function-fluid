@@ -1,6 +1,6 @@
 {
   "name": "@m2collective/scss-function-fluid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A package for integrating function to create responsive typography and design.",
   "keywords": [
     "m2collective",
@@ -21,8 +21,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@m2collective/scss-function-rem": "^1.0.0",
-    "@m2collective/scss-function-round": "^1.0.0"
+    "@m2collective/scss-function-rem": "^1.1.0",
+    "@m2collective/scss-function-round": "^1.1.0"
   },
   "license": "MIT",
   "author": {
